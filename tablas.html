@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso HTML5-CSS3</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container shadow">
+        <header>
+            <div class="row align-items-center">
+                <div class="col-3 img-padding"><img src="img/logoindex.png" alt="logo" width="250"></div>
+                <div class="col-9">
+                    <span id="btnmenu" onclick="opendrawer()">&#9776;</span>
+                    <nav id="menu">
+                        <ul class="text-right">
+                            <li>
+                                <a href="index.html">
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="parrafos.html">
+                                    Párrafos
+                                </a>
+                            </li>
+                            <li>
+                                <a href="enlaces.html">
+                                    Enlaces
+                                </a>
+                            </li>
+                            <li>
+                                <a href="listas.html">
+                                    Listas
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tablas.html">
+                                    Tablas
+                                </a>
+                            </li>
+                            <li>
+                                <a href="formularios.html">
+                                    Formularios
+                                </a>
+                            </li>
+                            <li>
+                                <a href="multimedia.html">
+                                    Multimedia
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main class="shadow">
+            <div>
+                <h1 class="bg-azul-o text-center text-white py-3 div-radius"> HTML5 y CSS3 </h1>
+            </div>
+            <div class="px-3">
+                <hr>
+            </div>
+            <div class="py-3">
+                <div id="enlaces">
+
+                    <h1 class="text-center">TABLAS</h1>
+                    <h2 class="text-center">En este apartado veremos como hacer tablas</h2>
+                
+                    <h3>Tabla de encabezado de fila</h3>
+                    <table border="1" class="tabla tabla-th tabla-td tabla-padding">
+                        <tr>
+                            <th>File</th>
+                            <th>Edit</th>
+                            <th>Selection</th>
+                            <th>View</th>
+                            <th>Go</th>
+                        </tr>
+                        <tr>
+                            <td>Celda</td>
+                            <td>Celda</td>
+                            <td>Celda</td>
+                            <td>Celda</td>
+                            <td>Celda</td>
+                        </tr>
+                        <tr>
+                            <td>Celda</td>
+                            <td>Celda</td>
+                            <td>Celda</td>
+                            <td>Celda</td>
+                            <td>Celda</td>
+                        </tr>
+                        <tr>
+                            <td>Celda</td>
+                            <td>Celda</td>
+                            <td>Celda</td>
+                            <td>Celda</td>
+                            <td>Celda</td>
+                        </tr>
+                    </table>
+
+                    <h3>Tabla de encabezado de columnas</h3>
+                    <table border="1" class="tabla tabla-th tabla-td tabla-padding">
+                        <tr>
+                            <th>File</th>
+                            <td>Celda</td>
+                            <td>Celda</td>
+                            <td>Celda</td>
+                            <td>Celda</td>                      
+                        </tr>
+                        <tr>
+                            <th>Edit</th>
+                            <td>Celda</td>
+                            <td>Celda</td>
+                            <td>Celda</td>
+                            <td>Celda</td>
+                        </tr>
+                        <tr>
+                            <th>Selection</th>
+                            <td>Celda</td>
+                            <td>Celda</td>
+                            <td>Celda</td>
+                            <td>Celda</td>
+                        </tr>
+                        <tr>
+                            <th>View</th>
+                            <td>Celda</td>
+                            <td>Celda</td>
+                            <td>Celda</td>
+                            <td>Celda</td>
+                        </tr>
+                    </table>
+
+                    <h3>Tabla con convinacion de celdas</h3>
+                    <table border="1" class="tabla tabla-th tabla-td tabla-padding">
+                        <tr>
+                            <th>File</th>
+                            <th>Edit</th>
+                            <th>Selection</th>
+                            <th>View</th>
+                            <th>Go</th>
+                        </tr>
+                        <tr>
+                            <td>Celda</td>
+                            <td colspan="3">Celda</td>
+                            <td>Celda</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3">Celda</td>
+                            <td>Celda</td>
+                            <td>Celda</td>
+                            <td>Celda</td>
+                            <td>Celda</td>
+                        </tr>
+                        <tr>
+                            <td>Celda</td>
+                            <td>Celda</td>
+                            <td>Celda</td>
+                            <td>Celda</td>
+                        </tr>
+                    </table>
+
+                    <h3>Tabla con diferente diseño en filas pares e impares</h3>
+                    <table border="1" class="tabla tabla-par tabla-impar tabla-padding">
+                        <tr>
+                            <th>File</th>
+                            <th>Edit</th>
+                            <th>Selection</th>
+                            <th>View</th>
+                            <th>Go</th>
+                        </tr>
+                        <tr>
+                            <td>Celda</td>
+                            <td>Celda</td>
+                            <td>Celda</td>
+                            <td>Celda</td>
+                            <td>Celda</td>
+                        </tr>
+                        <tr>
+                            <td>Celda</td>
+                            <td>Celda</td>
+                            <td>Celda</td>
+                            <td>Celda</td>
+                            <td>Celda</td>
+                        </tr>
+                        <tr>
+                            <td>Celda</td>
+                            <td>Celda</td>
+                            <td>Celda</td>
+                            <td>Celda</td>
+                            <td>Celda</td>
+                        </tr>
+                    </table>
+
+                    <h3>Ahora realizaremos el horario</h3>
+                    <table class="horario">
+                        <tr>
+                            <th>/~\</th>
+                            <th>Lunes</th>
+                            <th>Martes</th>
+                            <th>Miercoles</th>
+                            <th>Jueves</th>
+                            <th>Viernes</th>
+                        </tr>
+                        <tr>
+                            <th>08:15 09:10</th>
+                            <td class="lm" rowspan="2">LMSG Puli Mo, FrJo (1 B-302)</td>
+                            <td class="ing" >ING Corr Pi, JoMa (1 B-302)</td>
+                            <td class="prog" rowspan="2">PROG Mart Ca, JoJa (1 B-302)</td>
+                            <td class="prog" rowspan="2">PROG Mart Ca, JoJa (1 B-302)</td>
+                            <td class="bdd" rowspan="2">BDD Leon Di, JuEf (1 B-302)</td>
+                        </tr>
+                        <tr>
+                            <th>09:10  10:05</th>
+                            <td class="bdd" rowspan="2">BDD Leon Di, JuEf (1 B-302)</td>
+                        </tr>
+                        <tr>
+                            <th>10:05  11:00</th>
+                            <td class="ing" >ING Corr Pi, JoMa (1 B-302)</td>
+                            <td class="bdd" >BDD Leon Di, JuEf (1 B-302)</td>
+                            <td class="ende" >ENDE Polo Or, Ed (1 B-302)</td>
+                            <td class="fol" >FOL Marin Ca, RoMa (1 B-302)</td>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <td colspan="6">RECREO</td>
+                        </tr>
+                        <tr>
+                            <th>11:30  12:25</th>
+                            <td class="prog" rowspan="2">PROG Mart Ca, JoJa (1 B-302)</td>
+                            <td class="ende" >ENDE Polo Or, Ed (1 B-302)</td>
+                            <td class="bdd" >BDD Leon Di, JuEf (1 B-302)</td>
+                            <td class="sisi" rowspan="2">SISI Reoy He, OsAn (1 B-302)</td>
+                            <td class="sisi" rowspan="2">SISI Reoy He, OsAn (1 B-302)</td>
+                        </tr>
+                        <tr>
+                            <th>12:25  13:20</th>
+                            <td class="sisi" rowspan="2">SISI Reoy He, OsAn (1 B-302)</td>
+                            <td class="lm" rowspan="2">LMSG Puli Mo, FrJo (1 B-302)</td>
+                        </tr>
+                        <tr>
+                            <th>13:20  14:15</th>
+                            <td class="fol" >FOL Marin Ca, RoMa (1 B-302)</td>
+                            <td class="fol" >FOL Marin Ca, RoMa (1 B-302)</td>
+                            <td class="ende" >ENDE Polo Or, Ed (1 B-302)</td>
+                        </tr>
+                    </table>
+                </div>
+                
+            </div>
+        </main>
+        <footer>
+            <h1 class="bg-azul-o text-center text-white py-3"> David Ocampo Baratas </h1>
+            
+        </footer>
+    </div>
+    <script>
+        function opendrawer() {
+            document.getElementById('menu').style.display = 'block';
+            document.getElementById('menu').style.witdh = '100%';
+        }
+    </script>
+   
+</body>
+
+</html>

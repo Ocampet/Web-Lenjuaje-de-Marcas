@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso HTML5-CSS3</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container shadow">
+        <header>
+            <div class="row align-items-center">
+                <div class="col-3 img-padding"><img src="img/logoindex.png" alt="logo" width="250"></div>
+                <div class="col-9">
+                    <span id="btnmenu" onclick="opendrawer()">&#9776;</span>
+                    <nav id="menu">
+                        <ul class="text-right">
+                            <li>
+                                <a href="index.html">
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="parrafos.html">
+                                    Párrafos
+                                </a>
+                            </li>
+                            <li>
+                                <a href="enlaces.html">
+                                    Enlaces
+                                </a>
+                            </li>
+                            <li>
+                                <a href="listas.html">
+                                    Listas
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tablas.html">
+                                    Tablas
+                                </a>
+                            </li>
+                            <li>
+                                <a href="formularios.html">
+                                    Formularios
+                                </a>
+                            </li>
+                            <li>
+                                <a href="multimedia.html">
+                                    Multimedia
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main class="shadow">
+            <div>
+                <h1 class="bg-azul-o text-center text-white py-3 div-radius"> HTML5 y CSS3 </h1>
+            </div>
+            <div class="px-3">
+                <hr>
+            </div>
+            <div class="py-3">
+                <div id="multimedia">
+
+                    <h1 class="text-center">MULTIMEDIA</h1>
+                    <h2 class="text-center">Por ultimo veremos como insertar multimedia a nuestra pagina</h2>
+
+                    <h3>Con la etiqueta "video"</h3>
+                    <video class="video-w" controls>
+                        <source src="recursos/EscalonaVideo.mp4" type="video/mp4" />
+                        <source src="recursos/EscalonaVideo.webm" type="video/webm" />
+                        <source src="recursos/EscalonaVideo.ogv" type="video/ogg" />
+                      </video>
+
+                    <h3>Con la etiqueta "iframe"</h3>
+                    <iframe class="iframe-w" src="https://www.youtube.com/embed/0Fprb-i6tWk?si=P-iD4j-bcOthLPZ5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    
+                    <h3>Con la etiqueta "audio"</h3>        //METE TU AUDIO
+                    <audio src="audio.mp3"></audio>
+
+
+
+
+
+
+                </div>
+                
+            </div>
+        </main>
+        <footer>
+            <h1 class="bg-azul-o text-center text-white py-3"> David Ocampo Baratas </h1>
+            
+        </footer>
+    </div>
+    <script>
+        function opendrawer() {
+            document.getElementById('menu').style.display = 'block';
+            document.getElementById('menu').style.witdh = '100%';
+        }
+    </script>
+   
+</body>
+
+</html>

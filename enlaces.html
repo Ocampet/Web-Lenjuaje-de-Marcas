@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso HTML5-CSS3</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container shadow">
+        <header>
+            <div class="row align-items-center">
+                <div class="col-3 img-padding"><img src="img/logoindex.png" alt="logo" width="250"></div>
+                <div class="col-9">
+                    <span id="btnmenu" onclick="opendrawer()">&#9776;</span>
+                    <nav id="menu">
+                        <ul class="text-right">
+                            <li>
+                                <a href="index.html">
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="parrafos.html">
+                                    Párrafos
+                                </a>
+                            </li>
+                            <li>
+                                <a href="enlaces.html">
+                                    Enlaces
+                                </a>
+                            </li>
+                            <li>
+                                <a href="listas.html">
+                                    Listas
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tablas.html">
+                                    Tablas
+                                </a>
+                            </li>
+                            <li>
+                                <a href="formularios.html">
+                                    Formularios
+                                </a>
+                            </li>
+                            <li>
+                                <a href="multimedia.html">
+                                    Multimedia
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main class="shadow">
+            <div>
+                <h1 class="bg-azul-o text-center text-white py-3 div-radius"> HTML5 y CSS3 </h1>
+            </div>
+            <div class="px-3">
+                <hr>
+            </div>
+            <div class="py-3">
+                <div id="enlaces">
+
+                    <h1 class="text-center">ENLACES</h1>
+                    <h2 class="text-center">En este apartado veremos como hacer enalces, y todas la funciones que tiene</h2>
+
+                    <h3>Para hacer los enlaces usaremos la etiqueta "a" y empezaremos haciendo un enlace hacia Home, cuado hagamos clic sobre ella: </h3>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Haremos un enlace hacia <a href="index.html" class = "enalce">Home</a></p>
+            
+                    <h3>Ahora veremos un enlace hacia una pagina de Internet, en este caso cuando pusemos encima de Google:</h3>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Aqui tienes un enlace hacia <a href="https://www.google.com/">Google</a></p>
+
+                    <h3>A continuacion haremos lo mismo pero con la diferecia es que ahora abriremos la pagina en una nueva pestaña:</h3>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Aqui tienes un enlace hacia <a href="https://www.google.com/" target="_blank">Google</a></p>
+
+                    <h3>Tambien podemos hacer un enlace hacia un programa de Javascript</h3>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pulsa <a href="javascript:alert('Esto es un Javascript')">AQUI</a></p>
+
+                    <h3>Tambien podemos hacer un enlace hacia un correo</h3>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Al hacer clic sobre el correo, nos redireccionara hacaia nuestro gestor de correo, para mandar un correo a ese mismo correo</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="mailto:baratasocampodavid@gmail.com">Pincha en el correo: baratasocampodavid@gmail.com</a></p>
+
+                    <h3>Por ultimo veremos que tambien podemos usar una imagne como enalce</h3>
+                    <p class="text-center"> <a href="https://instagram.com/__ocampo._?igshid=OGQ5ZDc2ODk2ZA=="><img class="fotoenlace" src="img/enlacefoto.png"></a></p>
+
+
+                </div>
+                
+            </div>
+        </main>
+        <footer>
+            <h1 class="bg-azul-o text-center text-white py-3"> David Ocampo Baratas </h1>
+            
+        </footer>
+    </div>
+    <script>
+        function opendrawer() {
+            document.getElementById('menu').style.display = 'block';
+            document.getElementById('menu').style.witdh = '100%';
+        }
+    </script>
+   
+</body>
+
+</html>

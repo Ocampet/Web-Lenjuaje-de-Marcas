@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso HTML5-CSS3</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container shadow">
+        <header>
+            <div class="row align-items-center">
+                <div class="col-3 img-padding"><img src="img/logoindex.png" alt="logo" width="250"></div>
+                <div class="col-9">
+                    <span id="btnmenu" onclick="opendrawer()">&#9776;</span>
+                    <nav id="menu">
+                        <ul class="text-right">
+                            <li>
+                                <a href="index.html">
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="parrafos.html">
+                                    Párrafos
+                                </a>
+                            </li>
+                            <li>
+                                <a href="enlaces.html">
+                                    Enlaces
+                                </a>
+                            </li>
+                            <li>
+                                <a href="listas.html">
+                                    Listas
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tablas.html">
+                                    Tablas
+                                </a>
+                            </li>
+                            <li>
+                                <a href="formularios.html">
+                                    Formularios
+                                </a>
+                            </li>
+                            <li>
+                                <a href="multimedia.html">
+                                    Multimedia
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main class="shadow">
+            <div>
+                <h1 class="bg-azul-o text-center text-white py-3 div-radius"> HTML5 y CSS3 </h1>
+            </div>
+            <div class="px-3">
+                <hr>
+            </div>
+            <div class="py-3">
+                <div id="parrafos">
+
+                    <h1 class="text-center">PARRAFOS</h1>
+                    <h2 class="text-center">En este apartado veremos como hacer parrafos, con diferentes estilos</h2>
+
+                    <h3>Empezaremos usando la etiqueta "Lorem" para que nos escriba automaticamente palabras aleatorias: </h3>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident doloremque quae repellat porro accusantium quis id quasi blanditiis explicabo modi ab
+                    
+                    <h3>Ahora veremos como hacer un salto de linea en un parrafo sin espacio en blanco, con "br"; </h3> 
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Estamos escribiendo en el mismo parrafo pero<br>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; este texto esta en otra linea</br></p>
+
+                    <h3>Acontinuacion veremos los encabezados usando h1 hasta h6, ultiles para hacer cualquier tipo de titulo:</h3>
+                    <h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Encabezado h1</h1>
+                    <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Encabezado h2</h2>
+                    <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Encabezado h3</h3>
+                    <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Encabezado h4</h4>
+                    <h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Encabezado h5</h5>
+                    <h6>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Encabezado h6</h6>
+
+                    <h3>Ahora veremos distintos tipos de etiquetas para para dar formato al texto:</h3>
+                    <p>Para poner la letra en negrita utilizaremos la etiqueta <strong>"strong"</strong></p>
+                    <p>Para poner la letra en cursiva utilizaremos la etiqueta <em>"em"</em></p>
+                    <p>Para poner indices y superindices utilizaremos las etiquetas <sup>"sup"</sup> y <sub>"sub"</sub></p>
+                   
+                    <h3>Primero veremos la etiqueta "div" que es de tipo bloque y ocupa todo el ancho</h3>
+                    <div class="parrafos-bg-div-azul">Div 1</div>
+                    <div class="parrafos-bg-div-azul">Div 2</div>
+                    <div class="parrafos-bg-div-azul">Div 3</Div>
+
+                    <h3>Y por ultimo vremos la etiqueta "span" que a diferecia de "div" solo es para una parte del texto en concreto</h3>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;En este texto como podemos ver esta el fondo en <span class="parrafos-span">&nbsp azul y las letras en blanco &nbsp</span></p>
+
+                </div>
+                
+            </div>
+        </main>
+        <footer>
+            <h1 class="bg-azul-o text-center text-white py-3"> David Ocampo Baratas </h1>
+            
+        </footer>
+    </div>
+    <script>
+        function opendrawer() {
+            document.getElementById('menu').style.display = 'block';
+            document.getElementById('menu').style.witdh = '100%';
+        }
+    </script>
+   
+</body>
+
+</html>
